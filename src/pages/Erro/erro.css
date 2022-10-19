@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Outfit:wght@300;400&display=swap');
+
+.notFound{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin-top: 100px;
+}
+
+.notFound h1{
+   font-family: Jost;
+   font-size: 35px;
+}
+
+.notFound p{
+   font-family: Jost;
+   font-size: 20px;
+}
+
+.notFound img{
+   width: 300px;
+
+   animation: bouncing 1.5s infinite alternate;
+   -webkit-animation: bouncing 1.5s infinite alternate;
+}
+
+.notFound a{
+   display: flex;
+   align-items: center;
+   padding: 10px 20px; 
+   background-color: #1f1f1f;
+   margin-top: 20px;
+
+   text-decoration: none;
+   font-family: Jost;
+   font-size: 19px;
+   color:#FFF;
+
+   border-radius: 10px;
+   transition: .2s;
+}
+
+.notFound a:hover{
+   transform: scale(1.1);
+}
+
+@keyframes bouncing {
+   from{
+      transform: translateY(0px);
+   }
+   
+   to{
+      transform: translateY(-15px);
+   }
+}
