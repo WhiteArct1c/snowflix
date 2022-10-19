@@ -32,7 +32,7 @@ function Home(){
     if(loading){
         return(
             <div className='loading'>
-                <h2>Carregando filmes</h2>
+                <h2>Carregando</h2>
                 <div class="lds-ellipsis">
                     <div></div>
                     <div></div>
