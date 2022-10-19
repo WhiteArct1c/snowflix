@@ -7,6 +7,7 @@ function Header(){
             <Link to='/' className='logo'>SnowFlix</Link>
             <Link to='/favoritos' className='favoritos'>Meus favoritos</Link>
         </header>
+        
     )
 }
 

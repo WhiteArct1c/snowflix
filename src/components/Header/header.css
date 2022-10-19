@@ -17,17 +17,24 @@ a{
 .logo{
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 55px;
     color: #2f2f2f;
 }
 
 .favoritos{
     background-color: white;
-    padding: 10px;
+    padding: 8px 20px;
     border-radius: 14px;
     color: #1f1f1f;
 
     font-family: Jost;
     font-weight: bold;
+    font-size: 18px;
 
+    transition: .1s;
+}
+
+.favoritos:hover{
+    background-color: #2f2f2f;
+    color: white;
 }

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Outfit:wght@300;400&display=swap');
+
+.lista-filmes{
+   max-width: 100%;
+   margin: 14px auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.lista-filmes article{
+   width: 250px;
+   padding: 14px;
+   border-radius: 14px;
+   margin: 30px;
+
+   background-color: rgb(182, 182, 182);
+   transition: .3s;
+}
+
+.lista-filmes article:hover{
+   transform: scale(1.1);
+   box-shadow: 5px 10px 19px #3f3f3f;   
+}
+
+.lista-filmes strong{
+   font-family: 'Outfit';
+   font-size: large;
+   display: block;
+   text-align: center;
+}
+
+.lista-filmes a{
+   font-family: 'Outfit';
+   font-size: 19px;
+
+   text-decoration: none;
+   color: #1f1f1f;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #ffffff;
+   border-radius: 10px;
+   padding: 6px;
+
+   transition: .2s;
+}
+
+.lista-filmes a:hover{
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.lista-filmes img{
+   width: 100%;
+   margin: 14px 0px;
+   max-height: 340px;
+   object-fit: contain;
+
+   border-radius: 7px;
+}
+
+.loading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 200px;
+}
+
+.loading h2{
+   font-family: 'Outfit';
+   margin-right: 10px;
+}
+
+
+
+/* loading animation*/
+.lds-ellipsis {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+ }
+
+ .lds-ellipsis div {
+   position: absolute;
+   top: 33px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background: #2f2f2f;
+   animation-timing-function: cubic-bezier(0, 1, 1, 0);
+ }
+ .lds-ellipsis div:nth-child(1) {
+   left: 8px;
+   animation: lds-ellipsis1 0.6s infinite;
+ }
+ .lds-ellipsis div:nth-child(2) {
+   left: 8px;
+   animation: lds-ellipsis2 0.6s infinite;
+ }
+ .lds-ellipsis div:nth-child(3) {
+   left: 32px;
+   animation: lds-ellipsis2 0.6s infinite;
+ }
+ .lds-ellipsis div:nth-child(4) {
+   left: 56px;
+   animation: lds-ellipsis3 0.6s infinite;
+ }
+ @keyframes lds-ellipsis1 {
+   0% {
+     transform: scale(0);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+ @keyframes lds-ellipsis3 {
+   0% {
+     transform: scale(1);
+   }
+   100% {
+     transform: scale(0);
+   }
+ }
+ @keyframes lds-ellipsis2 {
+   0% {
+     transform: translate(0, 0);
+   }
+   100% {
+     transform: translate(24px, 0);
+   }
+ }
