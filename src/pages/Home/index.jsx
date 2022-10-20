@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
 import api from '../../services/api'
 import {Link} from 'react-router-dom'
+import Loading from '../../components/Loading'
 import './home.css'
 
 //https://api.themoviedb.org/3/movie/now_playing?api_key=bcba87548bafae0e8414d8dc43e926e3
@@ -31,15 +32,7 @@ function Home(){
 
     if(loading){
         return(
-            <div className='loading'>
-                <h2>Carregando</h2>
-                <div class="lds-ellipsis">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+            <Loading />
         )
     }
 
