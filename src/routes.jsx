@@ -5,6 +5,7 @@ import Filme from './pages/Filme'
 import Erro from './pages/Erro'
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 function RoutesApp(){
     return(
@@ -17,6 +18,7 @@ function RoutesApp(){
                 
                 <Route path='*' element={ <Erro/> } />
             </Routes>
+        <Footer />
         </BrowserRouter>
     )
 }
