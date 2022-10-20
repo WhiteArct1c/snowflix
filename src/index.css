@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     font-family: sans-serif;
+    height: 100%;
 }
 
 .app{
@@ -13,4 +14,7 @@ body{
     width: 100%;
     align-items: center;
     flex-direction: row;
+
+    min-height: 100vh;
 }
+

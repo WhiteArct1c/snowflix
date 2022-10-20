@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Outfit:wght@300;400&display=swap');
 
+
 .notFound{
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 
+   position: relative;
+
+   width: 100%;
+   height: 100%;
    margin-top: 100px;
 }
 
