@@ -8,6 +8,8 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
+   animation: fadeIn .5s backwards;
+   animation-delay: .1s;
 }
 
 .lista-filmes article{
@@ -16,7 +18,7 @@
    border-radius: 14px;
    margin: 30px;
 
-   background-color: rgb(182, 182, 182);
+   background-color: rgb(128, 128, 128);
    transition: .3s;
 }
 
@@ -30,6 +32,7 @@
    font-size: large;
    display: block;
    text-align: center;
+   color:rgb(255, 255, 255);
 }
 
 .lista-filmes a{
@@ -64,3 +67,12 @@
    border-radius: 7px;
 }
 
+@keyframes fadeIn {
+   from{
+      opacity: 0;
+   }
+
+   to{
+      opacity: 1;
+   }
+}

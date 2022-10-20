@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import api from '../../services/api'
+import {toast} from 'react-toastify'
 
 import Loading from '../../components/Loading'
 import './filme.css'
@@ -8,6 +9,7 @@ import './filme.css'
 function Filme(){
 
     const {id} = useParams();
+    const navigate = useNavigate();
 
     const [filme, setfilme] = useState({});
     const [loading, setLoading] = useState(true);
@@ -24,10 +26,31 @@ function Filme(){
                 setfilme(response.data)
                 setLoading(false)
             })
+            .catch(() =>{
+                navigate('/', {replace: true})
+                return;
+            })
         }
 
         loadFilme();
-    }, []) 
+    }, [navigate, id]) 
+
+    function salvarFilme(){
+        const minhaLista = localStorage.getItem('@snowflix');
+
+        let filmesSalvos = JSON.parse(minhaLista) || [];
+        const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id);
+
+        if(hasFilme){
+            toast.warn('Este filme já está na sua lista!')
+            return;
+        }
+
+        filmesSalvos.push(filme);
+        localStorage.setItem('@snowflix', JSON.stringify(filmesSalvos))
+
+        toast.success('Filme salvo com sucesso!')
+    }
 
     if(loading){
         return(
@@ -48,11 +71,11 @@ function Filme(){
                     <p><span>⭐</span> Avaliação: {filme.vote_average} / 10</p>
                 </div>
                 <div className='actionButtons'>
-                    <button className='saveBtn'>
+                    <button className='saveBtn' onClick={salvarFilme}>
                         Salvar
                     </button>
                     <button className='trailerBtn'>
-                        <a href='#'>Trailer</a>
+                        <a target='_blank' rel='external' href={`https://youtube.com/results?search_query=${filme.title}`}>Trailer</a>
                     </button>
                 </div> 
             </div>       

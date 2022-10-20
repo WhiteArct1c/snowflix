@@ -8,6 +8,9 @@
    margin-top: 3vh;
 
    width: 100%;
+
+   animation: fadeIn .5s backwards;
+   animation-delay: .3s;
 }
 
 .filme-info{
@@ -20,7 +23,7 @@
    padding: 25px;
    margin-bottom: 4vh;
 
-   background-color: #555555;
+   background-color: #777777;
    border-radius: 50px;
 
    color:white;
@@ -96,15 +99,31 @@
    font-family: Outfit;
    color: white;
    font-size: 30px;
+   transition: .3s;
 }
 
 .actionButtons .trailerBtn{
    background-color: rgb(141, 44, 44);
    font-family: Outfit;
    font-size: 30px;
+   transition: .3s;
 }
 
 .actionButtons .trailerBtn>a{
    text-decoration: none;
    color: white;
+}
+
+.actionButtons button:hover{
+   transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+   from{
+      opacity: 0;
+   }
+
+   to{
+      opacity: 1;
+   }
 }

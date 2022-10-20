@@ -14,7 +14,7 @@ function Home(){
     useEffect(() => {
 
         async function loadFilmes(){
-            const response = await api.get('movie/now_playing', {
+            const response = await api.get('movie/popular', {
                 params:{
                     api_key: 'bcba87548bafae0e8414d8dc43e926e3',
                     language: 'pt-BR',
@@ -22,7 +22,7 @@ function Home(){
                 }
             })
 
-            setFilmes(response.data.results.slice(0, 20));
+            setFilmes(response.data.results.slice(0, 30));
             setLoading(false);
         }
 

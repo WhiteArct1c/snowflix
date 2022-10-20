@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&family=Outfit:wght@300;400&display=swap');
+
+
+.containerLista{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   animation: fadeIn .5s backwards;
+   animation-delay: .3s;
+}
+
+.containerLista>span{
+   font-family: Outfit;
+   margin-top: 30px;
+   font-size: 30px;
+}
+
+h1{
+   font-family: Outfit;
+   font-size: 50px;
+   margin: 15px;
+   width: auto;
+}
+
+.containerLista ul{
+   display: block;
+   flex-direction: column;
+   align-items: center;
+   width: 110vh;
+
+}
+
+.containerLista li{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 15px 0;
+   padding: 5px;
+
+   width: 100%;
+
+   background-color: #6e6e6e;
+   color:white;
+
+   border-radius: 30px;
+}
+
+.containerLista li>a{
+   display: flex;
+   text-decoration: none;
+   color: white;
+}
+
+.containerLista li>span{
+   width: 200px;
+   text-align: center;
+   font-family: Outfit;
+   font-size: 24px;
+}
+
+.containerLista li>span>a{
+   text-decoration: none;
+   color: white;
+}
+
+.containerLista img{
+   width: 105px;
+   border-radius: 10px;
+}
+
+.favButtons{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   text-decoration: none;
+   font-family: Outfit;
+   font-size: 20px;
+
+}
+
+.favButtons button{
+   outline: none;
+   border: 0;
+   margin: 0 20px;
+   width: 60px;
+   height: 60px;
+   padding: 14px;
+   cursor: pointer;
+
+   font-family: Jost;
+   font-size: 23px;
+   font-weight: bold;
+
+   color: white;
+   background-color: rgb(214, 68, 68);
+
+   border-radius: 50%;
+   transition: .2s;
+}
+
+.favButtons button:hover{
+   transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+   from{
+      opacity: 0;
+   }
+
+   to{
+      opacity: 1;
+   }
+}
