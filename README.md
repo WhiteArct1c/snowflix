@@ -16,7 +16,7 @@
 ## ABOUT THE PROJECT:
 ---
 <p>
-   This is my first project using React, so the objective of this project is to apply my knowledge about React, React Hooks, React Routes (using react-router-dom), AXIOS for the HTTP requests and React Toastify for the styles of the alerts, the movies you saved only stays on the browser's local storage, so at the moment this project don't have a database. I decided to deploy this project on the netlify that you can access by clicking on the logo image at the top of this README.
+   This is my first project using React, so the objective of this project is to apply my knowledge about React, React Hooks, React Routes (using react-router-dom), Vite JS, AXIOS for the HTTP requests and React Toastify for the styles of the alerts, the movies you saved only stays on the browser's local storage, so at the moment this project don't have a database. I decided to deploy this project on the netlify that you can access by clicking on the logo image at the top of this README.
 </p>
 
 &nbsp;
