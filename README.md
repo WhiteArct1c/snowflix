@@ -39,7 +39,7 @@
 ---
 
 ### Netlify Status: 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ea973b36-4b2e-407d-97b6-e0817d7da10b/deploy-status)](https://app.netlify.com/sites/snowflix-project/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a986ff5e-f9e2-4b9e-a76a-bd87a4e45ad4/deploy-status)](https://app.netlify.com/sites/snowflixts/deploys)
 
 &nbsp;
 ### IMAGES: 
